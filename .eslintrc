@@ -1,0 +1,23 @@
+{
+    "extends": "eslint:recommended",
+    "plugins": [],
+    "rules":
+    {
+        "indent": 0,
+        "semi": ["error", "always"],
+        "no-console": 0,
+        "no-cond-assign": 0
+    },
+    "env":
+    {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "globals":
+    {
+        "$": true,
+        "jQuery": true,
+        "window": true
+    }
+}
