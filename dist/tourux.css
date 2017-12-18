@@ -1,0 +1,100 @@
+.tourux {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.tourux.in {
+  opacity: 1;
+}
+.tourux .tourux-helper {
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 9999998;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #777;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+.tourux .tourux-helper.transition {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.tourux .tourux-overlay {
+  box-sizing: content-box;
+  z-index: 9990;
+  background-color: #000;
+  background: rgba(0, 0, 0, 0.65);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+.tourux .tourux-content {
+  position: absolute;
+  color: #fff;
+  top: 260px;
+  width: 100%;
+  text-align: center;
+  z-index: 9992;
+  font-size: 18px;
+}
+.tourux .tourux-content .tourux-box {
+  display: inline-block;
+  max-width: 600px;
+}
+.tourux .tourux-content .tourux-box h1 {
+  margin-top: 0;
+}
+.tourux .tourux-connector {
+  z-index: 9991;
+  position: absolute;
+  overflow: hidden;
+  max-width: 100%;
+}
+.tourux .tourux-connector .connection-line-mark,
+.tourux .tourux-connector .connection-line-start,
+.tourux .tourux-connector .connection-line-end {
+  position: absolute;
+  color: #fff;
+}
+.tourux .tourux-buttons {
+  padding: 10px 0;
+}
+.tourux .tourux-button-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  z-index: 9995;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+}
+.tourux .tourux-button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 2px;
+  line-height: 1em;
+  font-size: 14px;
+}
+.tourux .tourux-button.tourux-button-previous {
+  background: #03A9F4;
+}
+.tourux .tourux-button.tourux-button-next {
+  background: #4CAF50;
+}
+.tourux-show-element {
+  z-index: 9999999!important;
+  position: relative;
+}
+
+/*# sourceMappingURL=tourux.css.map*/
